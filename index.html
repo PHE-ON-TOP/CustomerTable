@@ -8,7 +8,20 @@
 </head>
 <body>
     <h1>ข้อมูลลูกค้า</h1>
-    <p>Total Price : <span id="totalPrice">0</span> บาท</p>
+    <p>Total Price : <span id="totalPrice">0</span></p>
+    <p>Status Counts : 
+        <span id="finishedCount">Finished : 0</span> | 
+        <span id="inProgressCount">In Progress : 0</span> | 
+        <span id="notStartedCount">Not Started Yet : 0</span>
+    </p>
+    
+    <div>
+        <button onclick="filterData('all')">Show All</button>
+        <button onclick="filterData('Finished')">Show Finished</button>
+        <button onclick="filterData('In progress')">Show In Progress</button>
+        <button onclick="filterData('Not started yet')">Show Not Started Yet</button>
+    </div>
+
     <table id="customerTable">
         <thead>
             <tr>
@@ -19,70 +32,8 @@
                 <th>Status</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>Azu Nikka</td>
-                <td>27/11/2024 03:41:24</td>
-                <td>Portfolio</td>
-                <td>3,999 บาท</td>
-                <td>Finished 🟢</td>
-            </tr>
-
-            <tr>
-                <td>บูม ม.</td>
-                <td>27/11/2024 01:01:54</td>
-                <td>Dropdown</td>
-                <td>199 บาท</td>
-                <td>Finished 🟢</td>
-            </tr>
-
-            <tr>
-                <td>Chinnawat Dumklang</td>
-                <td>26/11/2024 18:01:48</td>
-                <td>Api Turemoney</td>
-                <td>999 บาท</td>
-                <td>Finished 🟢</td>
-            </tr>
-
-            <tr>
-                <td>Sit Naja</td>
-                <td>25/11/2024 10:24:15</td>
-                <td>เซอร์ไพรส์วันเกิด</td>
-                <td>1,999 บาท</td>
-                <td>Finished 🟢</td>
-            </tr>
-
-            <tr>
-                <td>Thanit Kebsiri</td>
-                <td>25/11/2024 08:55:36</td>
-                <td>โชว์เพลงที่ฟังในหน้า Desktop</td>
-                <td>399 บาท</td>
-                <td>Finished 🟢</td>
-            </tr>
-
-            <tr>
-                <td>Adun Nantakaew</td>
-                <td>24/11/2024 21:18:55</td>
-                <td>ค้าขาย แนวไซเบอร์ / จักรวาล</td>
-                <td>5,499 บาท</td>
-                <td>In progress 🟡</td>
-            </tr>
-
-            <tr>
-                <td>Katawut Laosopa</td>
-                <td>24/11/2024 19:28:09</td>
-                <td>บล็อกส่วนตัว</td>
-                <td>1,199 บาท</td>
-                <td>Finished 🟢</td>
-            </tr>
-
-            <tr>
-                <td>Wisanu Phornjariyatham</td>
-                <td>24/11/2024 13:05:39</td>
-                <td>ค้าขาย แนวมินิมอล</td>
-                <td>2,999 บาท</td>
-                <td>Finished 🟢</td>
-            </tr>
+        <tbody id="customerData">
+            <!-- Data from Users.txt will be inserted here -->
         </tbody>
     </table>
 
