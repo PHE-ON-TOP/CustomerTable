@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ข้อมูลลูกค้า</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="passwordSection">
         <input type="password" id="password" placeholder="Password">
         <button onclick="checkPassword()">Confirm</button>
     </div>
-    <p id="errorMessage" style="color: red; display: none;">The password is incorrect</p>
+    <p id="errorMessage">The password is incorrect</p>
 
     <div id="customerData" style="display: none;">
         <h1>ข้อมูลลูกค้า</h1>
@@ -85,38 +86,6 @@
         </table>
     </div>
 
-    <script>
-        const correctPassword = "28/12";
-
-        function checkPassword() {
-            const password = document.getElementById("password").value;
-            const errorMessage = document.getElementById("errorMessage");
-            const passwordSection = document.getElementById("passwordSection");
-            const customerData = document.getElementById("customerData");
-
-            if (password === correctPassword) {
-                passwordSection.style.display = "none";
-                customerData.style.display = "block";
-                sumPrices();
-            } else {
-                errorMessage.style.display = "block";
-            }
-        }
-
-        function sumPrices() {
-            const rows = document.querySelectorAll("#customerTable tbody tr");
-            let total = 0;
-
-            rows.forEach(row => {
-                const priceText = row.querySelector("td:nth-child(4)").textContent.trim();
-                const priceValue = parseInt(priceText.replace(" บาท", "").replace(",", ""));
-                if (!isNaN(priceValue)) {
-                    total += priceValue;
-                }
-            });
-
-            document.getElementById("totalPrice").textContent = total.toLocaleString();
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
