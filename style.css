@@ -55,10 +55,10 @@ button:hover {
 table {
     width: 80%;
     max-width: 1200px;
-    margin: 20px auto;
     border-collapse: collapse;
     background-color: #121212;
     border: none;
+    margin: 20px auto;
 }
 
 th, td {
@@ -113,7 +113,8 @@ tbody tr:nth-child(odd) {
 
 @media (max-width: 600px) {
     table {
-        width: 50%;
+        width: 90%;
+        margin: 0 auto;
     }
 
     th, td {
