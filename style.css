@@ -113,7 +113,7 @@ tbody tr:nth-child(odd) {
 
 @media (max-width: 600px) {
     table {
-        width: 100%;
+        width: 50%;
     }
 
     th, td {
