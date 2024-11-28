@@ -30,7 +30,7 @@ function loadCustomerData() {
                         inProgressCount++;
                     } else if (statusText.includes('Finished')) {
                         finishedCount++;
-                    } else if (statusText.includes('Not Started Yet')) {
+                    } else if (statusText.includes('Not started yet')) {
                         notStartedCount++;
                     }
                 }
