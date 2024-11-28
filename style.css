@@ -70,7 +70,7 @@ th, td {
 }
 
 th {
-    background-color: #ccc;
+    background-color: #444444;
     color: #000000;
     border-bottom: 2px solid #444444;
 }
@@ -78,6 +78,9 @@ th {
 td {
     background-color: #1c1c1c;
     color: #e0e0e0;
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    border-bottom: 1px solid #444444;
 }
 
 tr {
@@ -89,13 +92,13 @@ thead {
 }
 
 thead th {
-    width: 150px;
+    width: 250px;
     font-size: 16px;
     padding: 10px;
     text-align: center;
     background-color: #ccc;
     color: #000000;
-    border-bottom: 2px solid #444444;
+    border-bottom: 1px solid #444444;
 }
 
 tbody tr:last-child {
@@ -126,7 +129,7 @@ tbody tr:nth-child(odd) {
     }
     
     thead th {
-        width: 150px;
+        width: 250px;
         font-size: 13px;
         padding: 10px;
         text-align: center;
