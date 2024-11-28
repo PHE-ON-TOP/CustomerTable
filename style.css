@@ -112,23 +112,23 @@ tbody tr:nth-child(odd) {
 
 @media (max-width: 600px) {
     table {
-        width: 20%;
-        margin: 20px 0px 0px 0px;
+        width: 90%;
+        margin: 20px auto;
     }
 
     th, td {
-        padding: 2.5px;
-        font-size: 3px;
+        padding: 10px;
+        font-size: 12px;
     }
 
     thead {
-        height: 3.5px
+        height: 25px
     }
     
     thead th {
-        width: 2.5px;
-        font-size: 5px;
-        padding: 0px;
+        width: 150px;
+        font-size: 13px;
+        padding: 10px;
         text-align: center;
         background-color: #ccc;
         color: #000000;
