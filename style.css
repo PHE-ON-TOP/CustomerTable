@@ -122,11 +122,11 @@ tbody tr:nth-child(odd) {
     }
 
     thead {
-        height: 2.5px
+        height: 3.5px
     }
     
     thead th {
-        width: 5=2.5px;
+        width: 2.5px;
         font-size: 5px;
         padding: 0px;
         text-align: center;
