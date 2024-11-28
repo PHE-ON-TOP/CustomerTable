@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้อมูลลูกค้า</title>
+    <title>Customers</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ข้อมูลลูกค้า</h1>
+    <h1>Customers</h1>
     <p>Total Price : <span id="totalPrice">0</span></p>
     <p>Status Counts : 
-        <span id="finishedCount">Finished : 0</span> | 
-        <span id="inProgressCount">In Progress : 0</span> | 
-        <span id="notStartedCount">Not Started Yet : 0</span>
+        <span id="finishedCount">Finished : 0</span> 🟢 | 
+        <span id="inProgressCount">In Progress : 0</span> 🟡 | 
+        <span id="notStartedCount">Not Started Yet : 0</span> 🔴
     </p>
     
     <div>
-        <button onclick="filterData('all')">Show All</button>
+        <button onclick="filterData('all')">All</button>
         <button onclick="filterData('Finished')">Finished</button>
         <button onclick="filterData('In progress')">In Progress</button>
         <button onclick="filterData('Not started yet')">Not Started Yet</button>
