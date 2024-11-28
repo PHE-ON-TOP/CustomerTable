@@ -55,3 +55,20 @@ th, td {
 th:nth-child(2), td:nth-child(2) {
     text-align: left;
 }
+
+#password {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    text-align: center;
+}
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    text-align: center;
+}
+#passwordSection {
+    margin-bottom: 20px;
+    text-align: center;
+}
