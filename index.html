@@ -7,23 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Customers</h1>
-    <p>Total Price : <span id="totalPrice">0</span></p>
-    <p>
-        <span id="finishedCount">Finished : 0</span> 🟢 | 
-        <span id="inProgressCount">In Progress : 0</span> 🟡 | 
-        <span id="notStartedCount">Not Started Yet : 0</span> 🔴
-    </p>
-    
-    <div>
-        <button onclick="filterData('all')">All</button>
-        <button onclick="filterData('finished 🟢')">Finished</button>
-        <button onclick="filterData('in progress 🟡')">In Progress</button>
-        <button onclick="filterData('not started yet 🔴')">Not Started Yet</button>
-    </div>
-
     <table id="customerTable">
         <thead>
+            <h1>Customers</h1>
+            <p>Total Price : <span id="totalPrice">0</span></p>
+            <p>
+                <span id="finishedCount">Finished : 0</span> 🟢 | 
+                <span id="inProgressCount">In Progress : 0</span> 🟡 | 
+                <span id="notStartedCount">Not Started Yet : 0</span> 🔴
+            </p>
+            <div>
+                <button onclick="filterData('all')">All</button>
+                <button onclick="filterData('finished 🟢')">Finished</button>
+                <button onclick="filterData('in progress 🟡')">In Progress</button>
+                <button onclick="filterData('not started yet 🔴')">Not Started Yet</button>
+            </div>
             <tr>
                 <th>Customers</th>
                 <th>Timestamp</th>
