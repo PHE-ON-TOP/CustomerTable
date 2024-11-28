@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ข้อมูลลูกค้า</h1>
-
     <div id="passwordSection">
         <input type="password" id="password" placeholder="Password">
         <button onclick="checkPassword()">Confirm</button>
-        <p id="errorMessage" style="color: red; display: none;">The password is incorrect</p>
     </div>
+    <p id="errorMessage" style="color: red; display: none;">The password is incorrect</p>
 
     <div id="customerData" style="display: none;">
+        <h1>ข้อมูลลูกค้า</h1>
         <p>Total Price : <span id="totalPrice">0</span> บาท</p>
         <table id="customerTable">
             <thead>
