@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 100px;
+    padding: 20px;
     background-color: #f4f4f4;
 }
 
@@ -74,12 +74,6 @@ th:nth-child(2), td:nth-child(2) {
     box-sizing: border-box;
 }
 
-@media (max-width: 480px) {
-    #passwordSection {
-        width: 90%;
-    }
-}
-
 #password {
     width: 200px;
     padding: 8px;
@@ -104,4 +98,15 @@ button {
 
 #customerData {
     display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #passwordSection {
+        width: 90%;
+        padding: 15px;
+    }
 }
