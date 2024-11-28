@@ -8,76 +8,102 @@
 </head>
 <body>
     <h1>ข้อมูลลูกค้า</h1>
-    <p>Total Price : <span id="totalPrice">0</span> บาท</p>
-    <table id="customerTable">
-        <thead>
-            <tr>
-                <th>Usernames</th>
-                <th>Timestamp</th>
-                <th>Style / Messages</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Azu Nikka</td>
-                <td>27/11/2024 03:41:24</td>
-                <td>Portfolio</td>
-                <td>3,999 บาท</td>
-            </tr>
 
-            <tr>
-                <td>บูม ม.</td>
-                <td>27/11/2024 01:01:54</td>
-                <td>Dropdown</td>
-                <td>199 บาท</td>
-            </tr>
+    <div id="passwordSection">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="checkPassword()">Confirm</button>
+        <p id="errorMessage" style="color: red; display: none;">The password is incorrect</p>
+    </div>
 
-            <tr>
-                <td>Chinnawat Dumklang</td>
-                <td>26/11/2024 18:01:48</td>
-                <td>Api Turemoney</td>
-                <td>999 บาท</td>
-            </tr>
+    <div id="customerData" style="display: none;">
+        <p>Total Price : <span id="totalPrice">0</span> บาท</p>
+        <table id="customerTable">
+            <thead>
+                <tr>
+                    <th>Usernames</th>
+                    <th>Timestamp</th>
+                    <th>Style / Messages</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Azu Nikka</td>
+                    <td>27/11/2024 03:41:24</td>
+                    <td>Portfolio</td>
+                    <td>3,999 บาท</td>
+                </tr>
 
-            <tr>
-                <td>Sit Naja</td>
-                <td>25/11/2024 10:24:15</td>
-                <td>เซอร์ไพรส์วันเกิด</td>
-                <td>1,999 บาท</td>
-            </tr>
+                <tr>
+                    <td>บูม ม.</td>
+                    <td>27/11/2024 01:01:54</td>
+                    <td>Dropdown</td>
+                    <td>199 บาท</td>
+                </tr>
 
-            <tr>
-                <td>Thanit Kebsiri</td>
-                <td>25/11/2024 08:55:36</td>
-                <td>โชว์เพลงที่ฟังในหน้า Desktop</td>
-                <td>399 บาท</td>
-            </tr>
+                <tr>
+                    <td>Chinnawat Dumklang</td>
+                    <td>26/11/2024 18:01:48</td>
+                    <td>Api Turemoney</td>
+                    <td>999 บาท</td>
+                </tr>
 
-            <tr>
-                <td>Adun Nantakaew</td>
-                <td>24/11/2024 21:18:55</td>
-                <td>ค้าขาย แนวไซเบอร์ / จักรวาล</td>
-                <td>5,499 บาท</td>
-            </tr>
+                <tr>
+                    <td>Sit Naja</td>
+                    <td>25/11/2024 10:24:15</td>
+                    <td>เซอร์ไพรส์วันเกิด</td>
+                    <td>1,999 บาท</td>
+                </tr>
 
-            <tr>
-                <td>Katawut Laosopa</td>
-                <td>24/11/2024 19:28:09</td>
-                <td>บล็อกส่วนตัว</td>
-                <td>1,199 บาท</td>
-            </tr>
+                <tr>
+                    <td>Thanit Kebsiri</td>
+                    <td>25/11/2024 08:55:36</td>
+                    <td>โชว์เพลงที่ฟังในหน้า Desktop</td>
+                    <td>399 บาท</td>
+                </tr>
 
-            <tr>
-                <td>Wisanu Phornjariyatham</td>
-                <td>24/11/2024 13:05:39</td>
-                <td>ค้าขาย แนวมินิมอล</td>
-                <td>2,999 บาท</td>
-            </tr>
-        </tbody>
-    </table>
+                <tr>
+                    <td>Adun Nantakaew</td>
+                    <td>24/11/2024 21:18:55</td>
+                    <td>ค้าขาย แนวไซเบอร์ / จักรวาล</td>
+                    <td>5,499 บาท</td>
+                </tr>
+
+                <tr>
+                    <td>Katawut Laosopa</td>
+                    <td>24/11/2024 19:28:09</td>
+                    <td>บล็อกส่วนตัว</td>
+                    <td>1,199 บาท</td>
+                </tr>
+
+                <tr>
+                    <td>Wisanu Phornjariyatham</td>
+                    <td>24/11/2024 13:05:39</td>
+                    <td>ค้าขาย แนวมินิมอล</td>
+                    <td>2,999 บาท</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <script>
+        const correctPassword = "28/12";
+
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("errorMessage");
+            const passwordSection = document.getElementById("passwordSection");
+            const customerData = document.getElementById("customerData");
+
+            if (password === correctPassword) {
+                passwordSection.style.display = "none";
+                customerData.style.display = "block";
+                sumPrices();
+            } else {
+                errorMessage.style.display = "block";
+            }
+        }
+
         function sumPrices() {
             const rows = document.querySelectorAll("#customerTable tbody tr");
             let total = 0;
@@ -92,8 +118,6 @@
 
             document.getElementById("totalPrice").textContent = total.toLocaleString();
         }
-
-        window.onload = sumPrices;
     </script>
 </body>
 </html>
