@@ -1,5 +1,5 @@
-<tr> <td>Parkpoom Lekhavat</td> <td>28/11/2024 15:36:09</td> <td>อนิเมชั่นตอนเข้าเว็ป</td> <td>1,259 บาท</td> <td>Not Started Yet 🔴</td> </tr>
-<tr> <td>Waiyawut Freedom</td> <td>28/11/2024 15:23:31</td> <td>ค้าขาย แนวรกร้าง</td> <td>3,999 บาท</td> <td>In Progress 🟡</td> </tr>
+<tr> <td>Parkpoom Lekhavat</td> <td>28/11/2024 15:36:09</td> <td>อนิเมชั่นตอนเข้าเว็ป</td> <td>1,259 บาท</td> <td>In Progress 🟡</td> </tr>
+<tr> <td>Waiyawut Freedom</td> <td>28/11/2024 15:23:31</td> <td>ค้าขาย แนวรกร้าง</td> <td>3,999 บาท</td> <td>Finished 🟢</td> </tr>
 <tr> <td>Azu Nikka</td> <td>27/11/2024 03:41:24</td> <td>Portfolio</td> <td>3,999 บาท</td> <td>Finished 🟢</td> </tr>
 <tr> <td>บูม ม.</td> <td>27/11/2024 01:01:54</td> <td>Dropdown</td> <td>199 บาท</td> <td>Finished 🟢</td> </tr>
 <tr> <td>Chinnawat Dumklang</td> <td>26/11/2024 18:01:48</td> <td>Api Turemoney</td> <td>999 บาท</td> <td>Finished 🟢</td> </tr>
