@@ -98,7 +98,6 @@ thead th {
     border-bottom: 2px solid #444444;
 }
 
-
 tbody tr:last-child {
     border-bottom: none;
 }
@@ -120,6 +119,20 @@ tbody tr:nth-child(odd) {
     th, td {
         padding: 10px;
         font-size: 12px;
+    }
+
+    thead {
+        height: 25px
+    }
+    
+    thead th {
+        width: 50px;
+        font-size: 7px;
+        padding: 10px;
+        text-align: center;
+        background-color: #ccc;
+        color: #000000;
+        border-bottom: 2px solid #444444;
     }
 }
 
