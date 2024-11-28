@@ -4,6 +4,7 @@ body {
     padding: 20px;
     background-color: #000000;
     color: #ffffff;
+    text-align: center;
 }
 
 h1 {
@@ -33,7 +34,9 @@ textarea {
 }
 
 button {
-    padding: 10px 20px;
+    width: 120px;
+    height: 40px;
+    padding: 5px 5px;
     font-size: 16px;
     background: #ccc;
     color: #121212;
@@ -42,7 +45,7 @@ button {
     cursor: pointer;
     transition: background 0.3s ease;
 }
-  
+
 button:hover {
     background: #5c0000;
     color: #ffffff;
