@@ -96,6 +96,8 @@ button {
 #errorMessage {
     color: red;
     display: none;
+    opacity: 0;
+    transition: opacity 1s;
     margin-top: 10px;
     text-align: center;
 }
